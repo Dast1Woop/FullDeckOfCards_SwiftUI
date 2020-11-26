@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+
+/// 声明式UI编程，"很快啊!"
 struct ContentView: View {
     var viewModel: GameVM
     
@@ -36,6 +38,8 @@ struct Card: View {
         ZStack{
             RoundedRectangle(cornerRadius: 10.0)
                 .stroke(lineWidth: 3)
+            
+            //为适配夜晚模式效果
             RoundedRectangle(cornerRadius: 10.0)
                 .fill(Color.white)
             VStack{
